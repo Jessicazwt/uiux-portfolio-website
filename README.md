@@ -1,7 +1,3 @@
-## 🌐 Portfolio Website
-
-Website portfolio pribadi untuk menampilkan project UI/UX Design yang telah saya kerjakan melalui project pribadi maupun akademik.
-
 [portfoliojessica.html](https://github.com/user-attachments/files/28304720/portfoliojessica.html)
 <!DOCTYPE html>
 <html lang="en">
