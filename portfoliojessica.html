@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Jessica Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +15,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -22,7 +24,6 @@ background:#070b18;
 color:white;
 overflow-x:hidden;
 }
-
 
 /* Background */
 
@@ -52,382 +53,278 @@ opacity:.4;
 z-index:-1;
 }
 
-
 /* Navbar */
 
 nav{
-
 position:fixed;
 top:20px;
 left:50%;
 transform:translateX(-50%);
-
 width:90%;
-
 padding:18px 40px;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 border-radius:20px;
-
 background:rgba(255,255,255,.05);
-
 backdrop-filter:blur(20px);
-
 z-index:1000;
-
 }
 
 .logo{
-
-font-size:25px;
+font-size:28px;
 font-weight:700;
-
-background:linear-gradient(
-90deg,
-#60a5fa,
-#c084fc
-);
-
+background:linear-gradient(90deg,#60a5fa,#c084fc);
 -webkit-background-clip:text;
 color:transparent;
-
 }
 
 nav ul{
-
 display:flex;
 list-style:none;
-gap:25px;
-
+gap:30px;
 }
 
 nav a{
-
 text-decoration:none;
 color:white;
-
+font-weight:500;
+transition:.3s;
 }
 
+nav a:hover{
+opacity:.7;
+}
 
 /* Hero */
 
 .hero{
-
 min-height:100vh;
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 padding:0 10%;
-
-gap:50px;
-
+gap:60px;
 }
 
 .hero-text{
-
 flex:1;
-
 }
 
 .hero-text h1{
-
-font-size:70px;
-
+font-size:72px;
 line-height:1.1;
-
 }
 
 .hero-text span{
-
-background:linear-gradient(
-90deg,
-#60a5fa,
-#c084fc
-);
-
+background:linear-gradient(90deg,#60a5fa,#c084fc);
 -webkit-background-clip:text;
 color:transparent;
-
 }
 
 .hero-text p{
-
 margin-top:25px;
 line-height:1.8;
 opacity:.8;
-
+font-size:18px;
+max-width:600px;
 }
 
 .hero-image{
-
 flex:1;
 display:flex;
 justify-content:center;
-
 }
 
 .hero-image img{
-
-width:250px;
-height:250px;
-
+width:280px;
+height:280px;
 border-radius:50%;
 object-fit:cover;
-
 box-shadow:
 0 0 40px #4f46e5,
 0 0 80px #9333ea;
-
-border:6px solid rgba(
-255,
-255,
-255,
-.1
-);
-
+border:6px solid rgba(255,255,255,.1);
 }
-
 
 /* Buttons */
 
 .buttons{
-
-margin-top:30px;
+margin-top:35px;
 display:flex;
-gap:15px;
-
+gap:18px;
+flex-wrap:wrap;
 }
 
 .btn{
-
 padding:14px 30px;
 border-radius:50px;
 text-decoration:none;
 font-weight:600;
+transition:.3s;
+}
 
+.btn:hover{
+transform:translateY(-3px);
 }
 
 .primary{
-
-background:linear-gradient(
-90deg,
-#3b82f6,
-#9333ea
-);
-
+background:linear-gradient(90deg,#3b82f6,#9333ea);
 color:white;
-
 }
 
 .secondary{
-
 border:1px solid white;
 color:white;
-
 }
-
 
 /* Statistics */
 
 .stats{
-
 display:flex;
 justify-content:center;
-gap:20px;
+gap:25px;
 flex-wrap:wrap;
-
-padding:50px;
-
+padding:30px 10% 80px;
 }
 
 .stat{
-
-background:rgba(
-255,
-255,
-255,
-.05
-);
-
-padding:25px;
+background:rgba(255,255,255,.05);
+padding:30px;
 border-radius:20px;
-width:180px;
+width:200px;
 text-align:center;
-
+backdrop-filter:blur(15px);
 }
 
+.stat h2{
+font-size:35px;
+margin-bottom:10px;
+}
 
 /* Sections */
 
 section{
-
 padding:100px 10%;
-
 }
 
 .title{
-
-font-size:40px;
+font-size:45px;
 text-align:center;
-
-margin-bottom:50px;
-
+margin-bottom:60px;
 }
-
 
 /* Grid */
 
 .grid{
-
 display:grid;
-
-grid-template-columns:
-repeat(
-auto-fit,
-minmax(
-300px,
-1fr
-));
-
-gap:25px;
-
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
 }
-
 
 /* Card */
 
 .card{
-
-background:rgba(
-255,
-255,
-255,
-.05
-);
-
+background:rgba(255,255,255,.05);
 padding:25px;
-
 border-radius:25px;
-
 backdrop-filter:blur(20px);
-
-transition:.5s;
-
-display:flex;
-
-flex-direction:column;
-
-justify-content:flex-start;
-
-min-height:auto;
-
+transition:.4s;
 overflow:hidden;
-
+height:100%;
 }
 
 .card:hover{
-
-transform:
-translateY(-10px);
-
+transform:translateY(-10px);
 }
 
 .card img{
-
 width:100%;
-
-height:auto;
-
-max-height:350px;
-
-object-fit:contain;
-
+height:200px;
+object-fit:cover;
 border-radius:15px;
-
-display:block;
-
-margin:auto;
-
+margin-bottom:20px;
 }
 
+.card h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.8;
+opacity:.9;
+}
 
 /* Skills */
 
 .skills{
-
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 gap:15px;
-
 }
 
 .skill{
-
-padding:12px 18px;
-
+padding:14px 22px;
 background:#1e293b;
-
 border-radius:30px;
-
 }
-
 
 /* Contact */
 
 .contact{
-
 text-align:center;
-line-height:2;
-
+line-height:2.2;
+font-size:18px;
 }
 
+.contact a{
+color:white;
+text-decoration:none;
+}
 
 /* Footer */
 
 footer{
-
 padding:30px;
 text-align:center;
 opacity:.6;
-
 }
-
 
 /* Mobile */
 
 @media(max-width:768px){
 
+nav{
+padding:18px 25px;
+}
+
 nav ul{
-
 display:none;
-
 }
 
 .hero{
-
 flex-direction:column-reverse;
 text-align:center;
-padding-top:120px;
-
+padding-top:130px;
 }
 
-.hero h1{
-
-font-size:45px;
-
+.hero-text h1{
+font-size:50px;
 }
 
 .hero-image img{
+width:220px;
+height:220px;
+}
 
-width:250px;
-height:250px;
+.title{
+font-size:36px;
+}
 
+.card h3{
+font-size:24px;
 }
 
 }
@@ -441,57 +338,39 @@ height:250px;
 <nav>
 
 <div class="logo">
-
 Jessica
-
 </div>
 
 <ul>
-
 <li><a href="#about">About</a></li>
-
 <li><a href="#values">Personal</a></li>
-
 <li><a href="#skills">Skills</a></li>
-
 <li><a href="#projects">Projects</a></li>
-
 <li><a href="#achievement">Achievement</a></li>
-
 <li><a href="#contact">Contact</a></li>
-
 </ul>
 
 </nav>
-
-
 
 <section class="hero">
 
 <div class="hero-text">
 
 <h1>
-
 Hi I'm
-
-<span>
-
-Jessica
-
-</span>
-
+<br>
+<span>Jessica</span>
 </h1>
 
 <p>
-
 Information Systems student focused on UI/UX Design and creating user-centered digital experiences.
-
 </p>
 
 <div class="buttons">
 
 <a class="btn primary"
-href="https://linkedin.com/in/jessica-zhou-6a953721a">
+href="https://linkedin.com/in/jessica-zhou-6a953721a"
+target="_blank">
 
 LinkedIn
 
@@ -508,7 +387,6 @@ View Projects
 
 </div>
 
-
 <div class="hero-image">
 
 <img src="img/Jessica.jpg.jpeg">
@@ -517,53 +395,36 @@ View Projects
 
 </section>
 
-
-
-
 <div class="stats">
 
 <div class="stat">
-
 <h2>3+</h2>
-
 <p>Projects</p>
-
 </div>
 
-
 <div class="stat">
-
 <h2>3</h2>
-
 <p>Experience</p>
-
 </div>
-
 
 <div class="stat">
-
 <h2>4+</h2>
-
 <p>Certificates</p>
-
 </div>
 
 </div>
-
-
-
 
 <section id="about">
 
 <h2 class="title">
-
 About Me
-
 </h2>
 
 <div class="card">
 
+<p>
 Mahasiswa Sistem Informasi yang fokus pada UI/UX Design dengan kemampuan user research, wireframing, dan prototyping menggunakan Figma.
+</p>
 
 </div>
 
@@ -572,100 +433,51 @@ Mahasiswa Sistem Informasi yang fokus pada UI/UX Design dengan kemampuan user re
 <section id="values">
 
 <h2 class="title">
-
 Personal / Professional Values
-
 </h2>
 
 <div class="grid">
 
 <div class="card">
-
 <h3>🎨 Creativity</h3>
-
-<br>
-
 <p>
-
 Menciptakan ide dan solusi desain yang menarik, inovatif, dan berfokus pada kebutuhan pengguna.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <h3>🤝 Teamwork</h3>
-
-<br>
-
 <p>
-
 Mampu bekerja sama secara efektif dalam tim untuk mencapai tujuan bersama.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <h3>📈 Continuous Learning</h3>
-
-<br>
-
 <p>
-
 Selalu terbuka untuk mempelajari teknologi, tools, dan tren baru dalam bidang UI/UX.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <h3>💡 Problem Solving</h3>
-
-<br>
-
 <p>
-
 Menganalisis masalah pengguna dan memberikan solusi yang efektif melalui desain.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <h3>🎯 User-Centered Thinking</h3>
-
-<br>
-
 <p>
-
 Mengutamakan pengalaman pengguna agar desain mudah digunakan dan memberikan nilai nyata.
-
 </p>
-
 </div>
 
-
 <div class="card">
-
 <h3>💬 Communication</h3>
-
-<br>
-
 <p>
-
 Memiliki kemampuan komunikasi yang baik untuk menyampaikan ide dan berkolaborasi.
-
 </p>
-
 </div>
 
 </div>
@@ -675,9 +487,7 @@ Memiliki kemampuan komunikasi yang baik untuk menyampaikan ide dan berkolaborasi
 <section id="skills">
 
 <h2 class="title">
-
 Skills & Tools
-
 </h2>
 
 <div class="skills">
@@ -710,25 +520,27 @@ style="text-decoration:none;color:white;">
 
 <img src="img/finance.png.png">
 
-<h3>
-Finance Tracker App
-</h3>
+<h3>Finance Tracker App</h3>
 
 <p>
-Application for recording income and expenses. 
+Application for recording income and expenses.
+</p>
+
+<br>
+
 <p>
 Merancang desain aplikasi mobile untuk membantu pengguna mencatat pemasukan dan pengeluaran dengan tampilan yang bersih, informatif, dan mudah digunakan.
 </p>
+
 <br>
-<p>   
-Klik untuk melihat desain lengkapnya di Figma
+
+<p>
+Klik untuk melihat desain lengkapnya di Figma.
 </p>
 
 </div>
 
 </a>
-
-
 
 <a href="https://www.figma.com/design/VCkkWtDatzZlXDO5Eatl0k/Sewa-Pembicara?node-id=0-1&t=Lghu3zDccnszBL7S-1"
 target="_blank"
@@ -738,25 +550,27 @@ style="text-decoration:none;color:white;">
 
 <img src="img/speaker.png.png">
 
-<h3>
-Speaker Booking App
-</h3>
+<h3>Speaker Booking App</h3>
 
 <p>
-Application for booking speakers. 
+Application for booking speakers.
+</p>
+
+<br>
+
 <p>
 Merancang desain aplikasi untuk memudahkan pengguna mencari dan memesan pembicara profesional dengan navigasi yang sederhana dan user-friendly.
 </p>
+
 <br>
-<p>   
-Klik untuk melihat desain lengkapnya di Figma
+
+<p>
+Klik untuk melihat desain lengkapnya di Figma.
 </p>
 
 </div>
 
 </a>
-
-
 
 <a href="https://www.figma.com/design/pWixOpFAtThEdAqAZqDtAk/Design-Web--Pengelolaan-Stok-?t=Lghu3zDccnszBL7S-1"
 target="_blank"
@@ -766,18 +580,22 @@ style="text-decoration:none;color:white;">
 
 <img src="img/stock.png.png">
 
-<h3>
-Stock Management Website
-</h3>
+<h3>Stock Management Website</h3>
 
 <p>
-Inventory website design. 
+Inventory website design.
+</p>
+
+<br>
+
 <p>
 Merancang desain website pengelolaan stok barang dengan fokus pada kemudahan penggunaan dan efisiensi pengelolaan data.
 </p>
+
 <br>
-<p>    
-Klik untuk melihat desain lengkapnya di Figma
+
+<p>
+Klik untuk melihat desain lengkapnya di Figma.
 </p>
 
 </div>
@@ -788,13 +606,10 @@ Klik untuk melihat desain lengkapnya di Figma
 
 </section>
 
-
 <section id="achievement">
 
 <h2 class="title">
-
 Achievements & Certificates
-
 </h2>
 
 <div class="grid">
@@ -813,7 +628,6 @@ Participant Certificate
 
 </div>
 
-
 <div class="card">
 
 <img src="img/certificate2.png">
@@ -828,13 +642,12 @@ Workshop Certificate
 
 </div>
 
-
 <div class="card">
 
 <img src="img/certificate3.jpg">
 
 <h3>
-Mobile Development Project1
+Mobile Development Project 1
 </h3>
 
 <p>
@@ -843,13 +656,12 @@ Project Contribution Certificate
 
 </div>
 
-
 <div class="card">
 
 <img src="img/certificate4.jpg">
 
 <h3>
-Mobile Development Project2
+Mobile Development Project 2
 </h3>
 
 <p>
@@ -862,34 +674,30 @@ Professional Development
 
 </section>
 
-
-<section
-id="contact">
+<section id="contact">
 
 <h2 class="title">
-
 Contact
-
 </h2>
 
 <div class="contact">
 
-📧 
-<a href="mailto:jessica08082019@gmail.com" style="color:white;">
+📧
+<a href="mailto:jessica08082019@gmail.com">
 jessica08082019@gmail.com
 </a>
 
 <br>
 
-📱 
-<a href="https://wa.me/6282297150577" target="_blank" style="color:white;">
+📱
+<a href="https://wa.me/6282297150577" target="_blank">
 0822-9715-0577
 </a>
 
 <br>
 
-🔗 
-<a href="https://linkedin.com/in/jessica-zhou-6a953721a" target="_blank" style="color:white;">
+🔗
+<a href="https://linkedin.com/in/jessica-zhou-6a953721a" target="_blank">
 linkedin.com/in/jessica-zhou-6a953721a
 </a>
 
@@ -897,13 +705,9 @@ linkedin.com/in/jessica-zhou-6a953721a
 
 </section>
 
-
 <footer>
-
 Jessica © Portfolio
-
 </footer>
-
 
 </body>
 </html>
